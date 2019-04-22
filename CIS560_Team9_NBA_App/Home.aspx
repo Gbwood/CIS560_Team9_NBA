@@ -34,21 +34,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Teams
+            <a class="nav-link" href="TeamPage.aspx">Teams
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Coaches</a>
+            <a class="nav-link" href="CoachPage.aspx">Coaches</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Arenas</a>
+            <a class="nav-link" href="ArenaPage.aspx">Arenas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Players</a>
+            <a class="nav-link" href="PlayersPage.aspx">Players</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Games</a>
+            <a class="nav-link" href="GamePage">Games</a>
           </li>
         </ul>
       </div>
