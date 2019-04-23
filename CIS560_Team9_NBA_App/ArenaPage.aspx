@@ -73,36 +73,36 @@
             <asp:Label ID="uxArenaLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Arena Info:"></asp:Label>
             <br />
             <asp:DropDownList ID="uxArenaDropdown" runat="server" TabIndex="1">
-                <asp:ListItem>Atlanta Hawks</asp:ListItem>
-                <asp:ListItem>Boston Celtics</asp:ListItem>
-                <asp:ListItem>Brooklyn Nets</asp:ListItem>
-                <asp:ListItem>Charlotte Hornets</asp:ListItem>
-                <asp:ListItem>Chicago Bulls</asp:ListItem>
-                <asp:ListItem>Cleveland Cavaliers</asp:ListItem>
-                <asp:ListItem>Dallas Mavericks</asp:ListItem>
-                <asp:ListItem>Denver Nuggets</asp:ListItem>
-                <asp:ListItem>Detroit Pistons</asp:ListItem>
-                <asp:ListItem>Golden State Warriors</asp:ListItem>
-                <asp:ListItem>Houston Rockets</asp:ListItem>
-                <asp:ListItem>Indiana Pacers</asp:ListItem>
-                <asp:ListItem>LA Clippers</asp:ListItem>
-                <asp:ListItem>Los Angeles Lakers</asp:ListItem>
-                <asp:ListItem>Memphis Grizzlies</asp:ListItem>
-                <asp:ListItem>Miami Heat</asp:ListItem>
-                <asp:ListItem>Milwaukee Bucks</asp:ListItem>
-                <asp:ListItem>Minnesota Timberwolves</asp:ListItem>
-                <asp:ListItem>New Orleans Pelicans</asp:ListItem>
-                <asp:ListItem>New York Knicks</asp:ListItem>
-                <asp:ListItem>Oklahoma City Thunder</asp:ListItem>
-                <asp:ListItem>Orlando Magic</asp:ListItem>
-                <asp:ListItem>Philadelphia 76ers</asp:ListItem>
-                <asp:ListItem>Phoenix Suns</asp:ListItem>
-                <asp:ListItem>Portland Trail Blazers</asp:ListItem>
-                <asp:ListItem>Sacramento Kings</asp:ListItem>
-                <asp:ListItem>San Antonio Spurs</asp:ListItem>
-                <asp:ListItem>Toronto Raptors</asp:ListItem>
-                <asp:ListItem>Utah Jazz</asp:ListItem>
-                <asp:ListItem>Washington Wizards</asp:ListItem>
+                <asp:ListItem> State Farm Arena</asp:ListItem>
+                <asp:ListItem>Boston Garden</asp:ListItem>
+                <asp:ListItem>Barclays Center</asp:ListItem>
+                <asp:ListItem>Spectrum Center</asp:ListItem>
+                <asp:ListItem>United Center</asp:ListItem>
+                <asp:ListItem>Rocket Mortgage FieldHouse</asp:ListItem>
+                <asp:ListItem>American Airlines Center</asp:ListItem>
+                <asp:ListItem>Pepsi Center</asp:ListItem>
+                <asp:ListItem>Little Caesars Arena</asp:ListItem>
+                <asp:ListItem>Oracle Arena</asp:ListItem>
+                <asp:ListItem>Toyota Center</asp:ListItem>
+                <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
+                <asp:ListItem>Staples Center - Lakers</asp:ListItem>
+                <asp:ListItem>Staples Center - Clippers</asp:ListItem>
+                <asp:ListItem>FedExForum</asp:ListItem>
+                <asp:ListItem>American Airlines Arena</asp:ListItem>
+                <asp:ListItem>Fiserv Forum</asp:ListItem>
+                <asp:ListItem>Target Center</asp:ListItem>
+                <asp:ListItem>Smoothie King Center</asp:ListItem>
+                <asp:ListItem>Madison Square Garden</asp:ListItem>
+                <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
+                <asp:ListItem>Amway Center</asp:ListItem>
+                <asp:ListItem>Wells Fargo Center</asp:ListItem>
+                <asp:ListItem>Talking Stick Resort Arena</asp:ListItem>
+                <asp:ListItem>Moda Center</asp:ListItem>
+                <asp:ListItem>Golden 1 Center</asp:ListItem>
+                <asp:ListItem>AT&amp;T Center</asp:ListItem>
+                <asp:ListItem>Scotiabank Arena</asp:ListItem>
+                <asp:ListItem>Vivint Smart Home Arena</asp:ListItem>
+                <asp:ListItem>Capital One Arena</asp:ListItem>
             </asp:DropDownList>
         </div>
     </form>
