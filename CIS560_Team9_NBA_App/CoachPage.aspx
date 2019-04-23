@@ -103,7 +103,7 @@
         <p>
             &nbsp;</p>
         <p>
-        <asp:Label ID="uxCoachLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Coach Info:"></asp:Label>
+            &nbsp;<asp:Label ID="uxCoachLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Coach Info:"></asp:Label>
         </p>
         <p>
         <asp:DropDownList ID="uxCoachDropdown" runat="server" TabIndex="1">
