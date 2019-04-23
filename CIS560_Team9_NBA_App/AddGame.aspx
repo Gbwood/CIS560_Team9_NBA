@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ArenaPage.aspx.cs" Inherits="CIS560_Team9_NBA_App.ArenaPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddGame.aspx.cs" Inherits="CIS560_Team9_NBA_App.AddGame" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,9 +44,11 @@
 
   <title>NBA Application</title>
 
+  <!-- Bootstrap core CSS -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="vendor\bootstrap\css\NbaStyle.css" rel="stylesheet">
-    <link href="css/full.css" rel="stylesheet">
+    <link href="css/NbaStyle.css" rel="stylesheet">
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -56,10 +58,7 @@
 
 <body>
 
-   
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="Home.aspx">NBA Management Application</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,9 +77,9 @@
           <li class="nav-item">
             <a class="nav-link" href="CoachPage.aspx">Coaches</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="ArenaPage.aspx">Arenas
-                <span class="sr-only">(current)</span>
+                
             </a>
           </li>
           <li class="nav-item ">
@@ -88,58 +87,24 @@
                 
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="GamePage.aspx">Games</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="GamePage.aspx">Games
+                <span class="sr-only">(current)</span>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<body>
-    <form id="HomeForm" runat="server">
-        <!-- Page Content -->
-        <div class="container py-3 my-5" id="input">
-            <div class="row h-100 justify-content-center align-items-center">
-        <div>
-            <asp:Button ID="uxShowAllAreans" runat="server" Text="Show All Arenas" Width="196px" />
-            <br />
-            <br />
-            <br />
-            <asp:Label ID="uxArenaLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Arena Info:"></asp:Label>
-            <br />
-            <asp:DropDownList ID="uxArenaDropdown" runat="server" TabIndex="1">
-                <asp:ListItem> State Farm Arena</asp:ListItem>
-                <asp:ListItem>Boston Garden</asp:ListItem>
-                <asp:ListItem>Barclays Center</asp:ListItem>
-                <asp:ListItem>Spectrum Center</asp:ListItem>
-                <asp:ListItem>United Center</asp:ListItem>
-                <asp:ListItem>Rocket Mortgage FieldHouse</asp:ListItem>
-                <asp:ListItem>American Airlines Center</asp:ListItem>
-                <asp:ListItem>Pepsi Center</asp:ListItem>
-                <asp:ListItem>Little Caesars Arena</asp:ListItem>
-                <asp:ListItem>Oracle Arena</asp:ListItem>
-                <asp:ListItem>Toyota Center</asp:ListItem>
-                <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
-                <asp:ListItem>Staples Center - Lakers</asp:ListItem>
-                <asp:ListItem>Staples Center - Clippers</asp:ListItem>
-                <asp:ListItem>FedExForum</asp:ListItem>
-                <asp:ListItem>American Airlines Arena</asp:ListItem>
-                <asp:ListItem>Fiserv Forum</asp:ListItem>
-                <asp:ListItem>Target Center</asp:ListItem>
-                <asp:ListItem>Smoothie King Center</asp:ListItem>
-                <asp:ListItem>Madison Square Garden</asp:ListItem>
-                <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
-                <asp:ListItem>Amway Center</asp:ListItem>
-                <asp:ListItem>Wells Fargo Center</asp:ListItem>
-                <asp:ListItem>Talking Stick Resort Arena</asp:ListItem>
-                <asp:ListItem>Moda Center</asp:ListItem>
-                <asp:ListItem>Golden 1 Center</asp:ListItem>
-                <asp:ListItem>AT&amp;T Center</asp:ListItem>
-                <asp:ListItem>Scotiabank Arena</asp:ListItem>
-                <asp:ListItem>Vivint Smart Home Arena</asp:ListItem>
-                <asp:ListItem>Capital One Arena</asp:ListItem>
-            </asp:DropDownList>
-        </div>
+
+
+    
+    <form id="AddPlayerForm" runat="server">
+
+
+
+
+
     </form>
 </body>
 </html>

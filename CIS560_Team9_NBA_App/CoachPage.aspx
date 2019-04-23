@@ -58,7 +58,7 @@
 
 <body>
 
-    <form id="form1" runat="server">
+    
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -96,7 +96,10 @@
       </div>
     </div>
   </nav>
-
+        <form id="HomeForm" runat="server">
+        <!-- Page Content -->
+        <div class="container py-3 my-5" id="input">
+            <div class="row h-100 justify-content-center align-items-center">
         <p>
         <asp:Button ID="uxShowAllCoaches" runat="server" Text="Show All Coaches" Width="196px" OnClick="uxShowAllCoaches_Click" />
         </p>
@@ -106,7 +109,7 @@
             &nbsp;<asp:Label ID="uxCoachLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Coach Info:"></asp:Label>
         </p>
         <p>
-        <asp:DropDownList ID="uxCoachDropdown" runat="server" TabIndex="1">
+        <asp:DropDownList ID="uxCoachDropdown" runat="server" TabIndex="1" OnSelectedIndexChanged="uxCoachDropdown_SelectedIndexChanged">
             <asp:ListItem>Lloyd Pierce</asp:ListItem>
             <asp:ListItem>Brad Stevens</asp:ListItem>
             <asp:ListItem>Kenny Atkinson</asp:ListItem>

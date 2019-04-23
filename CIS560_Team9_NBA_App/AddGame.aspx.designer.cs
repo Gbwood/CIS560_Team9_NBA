@@ -10,7 +10,7 @@
 namespace CIS560_Team9_NBA_App {
     
     
-    public partial class GamePage {
+    public partial class AddGame {
         
         /// <summary>
         /// AddPlayerForm control.
@@ -20,14 +20,5 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm AddPlayerForm;
-        
-        /// <summary>
-        /// btn_AddPlayer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_AddPlayer;
     }
 }

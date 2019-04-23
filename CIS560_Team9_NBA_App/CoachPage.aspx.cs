@@ -11,12 +11,17 @@ namespace CIS560_Team9_NBA_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void uxShowAllCoaches_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void uxCoachDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //uxCoachDropdown.SelectedIndex = 5;
         }
     }
 }

@@ -57,7 +57,7 @@
 </head>
 
 <body>
-
+    <form id="AddPlayerForm" runat="server">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -93,5 +93,6 @@
       </div>
     </div>
   </nav>
-
+            <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddGame.aspx" Text="Add a Game" />
+</form>
 </html>
