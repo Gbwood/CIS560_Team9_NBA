@@ -92,9 +92,12 @@
     </div>
   </nav>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
+    <form id="HomeForm" runat="server">
+        <!-- Page Content -->
+        <div class="container py-3 my-5" id="input">
+            <div class="row h-100 justify-content-center align-items-center">
+    
+        
         <asp:Button ID="uxShowAllTeams" runat="server" Text="Show All Teams" Width="196px" />
         <br />
         <br />
@@ -133,6 +136,8 @@
             <asp:ListItem>Utah Jazz</asp:ListItem>
             <asp:ListItem>Washington Wizards</asp:ListItem>
         </asp:DropDownList>
+                </div>
+            </div>
     </form>
 </body>
 </html>
