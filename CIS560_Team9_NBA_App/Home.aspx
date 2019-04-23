@@ -48,7 +48,7 @@
             <a class="nav-link" href="PlayersPage.aspx">Players</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="GamePage">Games</a>
+            <a class="nav-link" href="GamePage.aspx">Games</a>
           </li>
         </ul>
       </div>
