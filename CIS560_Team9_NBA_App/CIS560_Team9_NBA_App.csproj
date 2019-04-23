@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddPlayer.aspx" />
     <Content Include="ArenaPage.aspx" />
     <Content Include="CoachPage.aspx" />
     <Content Include="Contact.aspx" />
@@ -191,6 +192,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPlayer.aspx.cs">
+      <DependentUpon>AddPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPlayer.aspx.designer.cs">
+      <DependentUpon>AddPlayer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
