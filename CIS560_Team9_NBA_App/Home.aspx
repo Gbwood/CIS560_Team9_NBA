@@ -2,7 +2,39 @@
 <html lang="en">
 
 <head>
-
+    <style>
+        #topNav {
+            background-color: #512888 !important;
+        }
+        body {
+            background-image: none !important;
+        }
+        @media (min-width: 780px) {
+            body {
+                background-color: rgba(81, 40, 136, .75) !important;
+            }
+        }
+        @media (max-width: 780px) {
+            body {
+                background-color: rgba(81, 40, 136, .25) !important;
+            }
+        }
+        #input {
+            border-radius: 25px;
+            background: rgb(220,220,220);
+        }
+        #dropdownMenuButton {
+            background-color: #512888 !important;
+            color: rgba(255,255,255,.5);
+        }
+        #dropdownMenuButton:hover {
+            background-color: #512888 !important;
+            color: rgba(255,255,255,1);
+        }
+        .nav-link:hover {
+            color: rgba(255,255,255,1) !important;
+        }
+    </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -60,19 +92,26 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">NBA Application</h1>
-        <p class="lead">Tanner Bayless, Mitchell Blazer, Graham Wood, Tyler Trammell</p>
-        <ul class="list-unstyled">
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    <form id="HomeForm" runat="server">
+        <!-- Page Content -->
+        <div class="container py-3 my-5" id="input">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="form-group row">
+                     <div class="row h-100 justify-content-center align-items-center">
+                    <h1 class="mt-5">NBA Application</h1>                   
+                    <div class="col-9">                      
+                        <p class="lead">Tanner Bayless, Mitchell Blazer, Graham Wood, Tyler Trammell</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
+                    
+         
+            
+         
+    
+         </form>
   <!-- Bootstrap core JavaScript -->
   <script src="~/Content/vendor/jquery/jquery.min.js"></script>
   <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

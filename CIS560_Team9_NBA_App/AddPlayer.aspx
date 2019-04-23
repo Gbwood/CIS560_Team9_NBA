@@ -3,7 +3,39 @@
 <html lang="en">
 
 <head>
-
+    <style>
+        #topNav {
+            background-color: #512888 !important;
+        }
+        body {
+            background-image: none !important;
+        }
+        @media (min-width: 780px) {
+            body {
+                background-color: rgba(81, 40, 136, .75) !important;
+            }
+        }
+        @media (max-width: 780px) {
+            body {
+                background-color: rgba(81, 40, 136, .25) !important;
+            }
+        }
+        #input {
+            border-radius: 25px;
+            background: rgb(220,220,220);
+        }
+        #dropdownMenuButton {
+            background-color: #512888 !important;
+            color: rgba(255,255,255,.5);
+        }
+        #dropdownMenuButton:hover {
+            background-color: #512888 !important;
+            color: rgba(255,255,255,1);
+        }
+        .nav-link:hover {
+            color: rgba(255,255,255,1) !important;
+        }
+    </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
