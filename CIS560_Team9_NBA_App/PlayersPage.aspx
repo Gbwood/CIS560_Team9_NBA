@@ -101,11 +101,15 @@
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
                     <div class="form-group row">
+                        <label for="lname-input" class="col-3 col-form-label font-weight-bold">Search Player</label>
+                        <div>
+                              <asp:TextBox ID="uxSearchPlayerTB" runat="server" Width="346px"></asp:TextBox>
+                              <asp:Button ID="uxSearchPlayerButton" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="searchSubmit_Click" Text="Search Player"/>
+                        </div>
                         </div>
 
         
-        <asp:TextBox ID="uxSearchPlayerTB" runat="server" Width="346px"></asp:TextBox>
-        <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search Player"/>
+        
     </form>
 
 
