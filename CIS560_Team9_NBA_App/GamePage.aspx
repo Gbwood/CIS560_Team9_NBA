@@ -98,7 +98,38 @@
                 <div class="input-group py-0" style="padding-top: 20%; top: 0px; left: 0px;">
                 <asp:TextBox id="searchBox" placeholder="Game Search" CssClass="form-control col-form-label-lg" runat="server" />
                 <asp:DropDownList ID="searchBoxDrop" runat="server" DataSourceID="" AppendDataBoundItems="true" CssClass="custom-select form-control col-form-label-lg h-auto">
-                    <asp:ListItem Text="Please select an option..." Value="" />
+                                       <asp:ListItem> -- select an option -- </asp:ListItem>
+                        <asp:ListItem>State Farm Arena</asp:ListItem>
+                        <asp:ListItem>TD Garden</asp:ListItem>
+                        <asp:ListItem>Barclays Center</asp:ListItem>
+                        <asp:ListItem>Time Warner Cable Arena</asp:ListItem>
+                        <asp:ListItem>United Center</asp:ListItem>
+                        <asp:ListItem>Quicken Loans Arena</asp:ListItem>
+                        <asp:ListItem>American Airlines Center</asp:ListItem>
+                        <asp:ListItem>Pepsi Center</asp:ListItem>
+                        <asp:ListItem>The Palace of Auburn Hills</asp:ListItem>
+                        <asp:ListItem>Toyota Center</asp:ListItem>
+                        <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
+                        <asp:ListItem>Staples Center</asp:ListItem>
+                        <asp:ListItem>Staples Center</asp:ListItem>
+                        <asp:ListItem>FedExForum</asp:ListItem>
+                        <asp:ListItem>AmericanAirlines Arena</asp:ListItem>
+                        <asp:ListItem>Bradley Center</asp:ListItem>
+                        <asp:ListItem>Target Center</asp:ListItem>
+                        <asp:ListItem>New Orleans Arena</asp:ListItem>
+                        <asp:ListItem>Madison Square Garden</asp:ListItem>
+                        <asp:ListItem>Oracle Arena</asp:ListItem>
+                        <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
+                        <asp:ListItem>Amway Center</asp:ListItem>
+                        <asp:ListItem>Wells Fargo Center</asp:ListItem>
+                        <asp:ListItem>US Airways Center</asp:ListItem>
+                        <asp:ListItem>Rose Garden</asp:ListItem>
+                        <asp:ListItem>Power Balance Pavilion</asp:ListItem>
+                        <asp:ListItem>EnergySolutions Arena</asp:ListItem>
+                        <asp:ListItem>AT&T Center</asp:ListItem>
+                        <asp:ListItem>Air Canada Centre</asp:ListItem>
+                        <asp:ListItem>Verizon Center</asp:ListItem>
+
                 </asp:DropDownList>
             </div>
             <div class="form-inline col-12">
@@ -115,5 +146,12 @@
                 <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search" />
             </div>
         </div>
+        <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
+                <Columns>
+                    <asp:CommandField ShowEditButton="True" />
+                </Columns>
+
+
+        </asp:GridView>
 </form>
 </html>

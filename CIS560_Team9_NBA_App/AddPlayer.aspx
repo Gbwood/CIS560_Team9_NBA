@@ -112,15 +112,33 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="birthday-input" class="col-3 col-form-label font-weight-bold">Date of Birth</label>
+                <label for="birthday-input" class="col-3 col-form-label font-weight-bold">Age</label>
                 <div class="col-9">
-                    <asp:TextBox ID="Birthday_input" placeholder="MM/DD/YY" type="date" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="Age_input" placeholder="29" type="int" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="Height-input" class="col-3 col-form-label font-weight-bold" id="Height">Height</label>
                 <div class="col-9">
-                    <asp:TextBox ID="HeightInput" placeholder="69 inches" type="Height" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="HeightInput" placeholder="6-9" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Number-input" class="col-3 col-form-label font-weight-bold" id="PlayerNumber">Number</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Number_input" placeholder="69" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Position-input" class="col-3 col-form-label font-weight-bold" id="Positionlbl">Position</label>
+                <div class="col-9">
+                    <asp:TextBox ID="PositionInput" placeholder="PG" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Team-input" class="col-3 col-form-label font-weight-bold" id="Teamlbl">Team</label>
+                <div class="col-9">
+                    <asp:TextBox ID="TeamInput" placeholder="Wildcats" type="text" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
             </div>
           

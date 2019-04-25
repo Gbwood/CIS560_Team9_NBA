@@ -40,13 +40,13 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.WebControls.TextBox LastName_input;
         
         /// <summary>
-        /// Birthday_input control.
+        /// Age_input control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Birthday_input;
+        protected global::System.Web.UI.WebControls.TextBox Age_input;
         
         /// <summary>
         /// HeightInput control.
@@ -56,6 +56,33 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox HeightInput;
+        
+        /// <summary>
+        /// Number_input control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Number_input;
+        
+        /// <summary>
+        /// PositionInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PositionInput;
+        
+        /// <summary>
+        /// TeamInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TeamInput;
         
         /// <summary>
         /// Submit control.
