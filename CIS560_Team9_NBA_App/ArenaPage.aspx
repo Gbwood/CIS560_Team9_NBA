@@ -104,41 +104,13 @@
                     <asp:Label ID="ArenaLabel" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text="Select Arena"></asp:Label>
 
                 <div class="col-9">
-                    <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1">
-                        <asp:ListItem> State Farm Arena</asp:ListItem>
-                        <asp:ListItem>Boston Garden</asp:ListItem>
-                        <asp:ListItem>Barclays Center</asp:ListItem>
-                        <asp:ListItem>Spectrum Center</asp:ListItem>
-                        <asp:ListItem>United Center</asp:ListItem>
-                        <asp:ListItem>Rocket Mortgage FieldHouse</asp:ListItem>
-                        <asp:ListItem>American Airlines Center</asp:ListItem>
-                        <asp:ListItem>Pepsi Center</asp:ListItem>
-                        <asp:ListItem>Little Caesars Arena</asp:ListItem>
-                        <asp:ListItem>Oracle Arena</asp:ListItem>
-                        <asp:ListItem>Toyota Center</asp:ListItem>
-                        <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
-                        <asp:ListItem>Staples Center - Lakers</asp:ListItem>
-                        <asp:ListItem>Staples Center - Clippers</asp:ListItem>
-                        <asp:ListItem>FedExForum</asp:ListItem>
-                        <asp:ListItem>American Airlines Arena</asp:ListItem>
-                        <asp:ListItem>Fiserv Forum</asp:ListItem>
-                        <asp:ListItem>Target Center</asp:ListItem>
-                        <asp:ListItem>Smoothie King Center</asp:ListItem>
-                        <asp:ListItem>Madison Square Garden</asp:ListItem>
-                        <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
-                        <asp:ListItem>Amway Center</asp:ListItem>
-                        <asp:ListItem>Wells Fargo Center</asp:ListItem>
-                        <asp:ListItem>Talking Stick Resort Arena</asp:ListItem>
-                        <asp:ListItem>Moda Center</asp:ListItem>
-                        <asp:ListItem>Golden 1 Center</asp:ListItem>
-                        <asp:ListItem>AT&amp;T Center</asp:ListItem>
-                        <asp:ListItem>Scotiabank Arena</asp:ListItem>
-                        <asp:ListItem>Vivint Smart Home Arena</asp:ListItem>
-                        <asp:ListItem>Capital One Arena</asp:ListItem>
+                    <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1" DataSourceID="NBADatabase" DataTextField="Venue" DataValueField="Venue">
+                        
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="NBADatabase" runat="server" ConnectionString="<%$ ConnectionStrings:NBALeagueConnectionString %>" SelectCommand="SELECT [Venue] FROM [arena]"></asp:SqlDataSource>
                     </div>
                 </div>
-                <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas"  />
+                <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas" OnClick="uxShowAllAreans_Click"  />
 
         </div>
 

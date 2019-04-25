@@ -139,13 +139,17 @@
                      <asp:Button ID="uxShowAllTeams" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Teams"  />
 
                 </div>
-            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
+            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 " DataSourceID="SqlDataSource1">
                 <Columns>
                     <asp:CommandField ShowEditButton="True" />
                 </Columns>
 
 
         </asp:GridView>
+ 
+
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
  
 
 
