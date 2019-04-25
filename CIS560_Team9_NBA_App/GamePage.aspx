@@ -146,5 +146,12 @@
                 <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search" />
             </div>
         </div>
+        <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
+                <Columns>
+                    <asp:CommandField ShowEditButton="True" />
+                </Columns>
+
+
+        </asp:GridView>
 </form>
 </html>
