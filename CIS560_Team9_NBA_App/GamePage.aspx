@@ -99,6 +99,44 @@
                 <asp:TextBox id="searchBox" placeholder="Game Search" CssClass="form-control col-form-label-lg" runat="server" />
                 <asp:DropDownList ID="searchBoxDrop" runat="server" DataSourceID="" AppendDataBoundItems="true" CssClass="custom-select form-control col-form-label-lg h-auto">
                     <asp:ListItem Text="Please select an option..." Value="" />
+                     <asp:ListItem> State Farm Arena</asp:ListItem>
+                            <asp:ListItem>Boston Garden</asp:ListItem>
+                            <asp:ListItem>Barclays Center</asp:ListItem>
+                            <asp:ListItem>Spectrum Center</asp:ListItem>
+                            <asp:ListItem>United Center</asp:ListItem>
+                            <asp:ListItem>Rocket Mortgage FieldHouse</asp:ListItem>
+                            <asp:ListItem>American Airlines Center</asp:ListItem>
+                            <asp:ListItem>Pepsi Center</asp:ListItem>
+                            <asp:ListItem>Little Caesars Arena</asp:ListItem>
+                            <asp:ListItem>Oracle Arena</asp:ListItem>
+                            <asp:ListItem>Toyota Center</asp:ListItem>
+                            <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
+                            <asp:ListItem>Staples Center - Lakers</asp:ListItem>
+                            <asp:ListItem>Staples Center - Clippers</asp:ListItem>
+                            <asp:ListItem>FedExForum</asp:ListItem>
+                            <asp:ListItem>American Airlines Arena</asp:ListItem>
+                            <asp:ListItem>Fiserv Forum</asp:ListItem>
+                            <asp:ListItem>Target Center</asp:ListItem>
+                            <asp:ListItem>Smoothie King Center</asp:ListItem>
+                            <asp:ListItem>Madison Square Garden</asp:ListItem>
+                            <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
+                            <asp:ListItem>Amway Center</asp:ListItem>
+                            <asp:ListItem>Wells Fargo Center</asp:ListItem>
+                            <asp:ListItem>Talking Stick Resort Arena</asp:ListItem>
+                            <asp:ListItem>Moda Center</asp:ListItem>
+                            <asp:ListItem>Golden 1 Center</asp:ListItem>
+                            <asp:ListItem>AT&amp;T Center</asp:ListItem>
+                            <asp:ListItem>Scotiabank Arena</asp:ListItem>
+                            <asp:ListItem>Vivint Smart Home Arena</asp:ListItem>
+                            <asp:ListItem>Capital One Arena</asp:ListItem>
+
+
+
+
+
+
+
+
                 </asp:DropDownList>
             </div>
             <div class="form-inline col-12">
