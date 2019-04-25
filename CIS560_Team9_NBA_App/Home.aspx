@@ -94,18 +94,28 @@
   <!-- Page Content -->
     <form id="HomeForm" runat="server">
         <!-- Page Content -->
+        <div class="row h-100 justify-content-center align-items-center">
+            <img src="https://image.roku.com/blog/wp-content/uploads/2018/04/NBAApp-Playoffs18-Roku-1200x628.jpg" />
+         </div>
+
         <div class="container py-3 my-5" id="input">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="form-group row">
                      <div class="row h-100 justify-content-center align-items-center">
-                    <h1 class="mt-5">NBA Application</h1>                   
-                    <div class="col-9">                      
-                        <p class="lead">Tanner Bayless, Mitchell Blazer, Graham Wood, Tyler Trammell</p>
-                    </div>
+                    <h1 class="mt-5">NBA Management Application</h1>                   
+                    <div class="col-9">                     
+                        <div class="row h-100 justify-content-center align-items-center">
+                        <p class="lead">Created by: Tanner Bayless, Mitchell Blazer, Graham Wood, Tyler Trammell</p>
+                        <p class="lead">App created for Educational purposes</p>
+                        <p class="lead">We do not own the rights to NBA and all trademarks belong by their respective owners</p>
+                        </div>
+                       
+                     </div>
                 </div>
             </div>
         </div>
     </div>
+        
                     
          
             
