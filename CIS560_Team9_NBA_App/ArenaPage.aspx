@@ -99,11 +99,12 @@
     <form id="HomeForm" runat="server">
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
-             <div class="row h-100 justify-content-center align-items-center">
         
             <div class="form-group row">
-                    <label for="uxArenaDropdown" class="col-3 col-form-label font-weight-bold">Arena</label>                <div class="col-9">
-                    <asp:DropDownList ID="uxArenaDropdown" runat="server" TabIndex="1">
+                    <asp:Label ID="ArenaLabel" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text="Select Arena"></asp:Label>
+
+                <div class="col-9">
+                    <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1">
                         <asp:ListItem> State Farm Arena</asp:ListItem>
                         <asp:ListItem>Boston Garden</asp:ListItem>
                         <asp:ListItem>Barclays Center</asp:ListItem>
@@ -137,10 +138,11 @@
                     </asp:DropDownList>
                     </div>
                 </div>
-                 </div>
-                                        <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas"  />
+                <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas"  />
 
-                </div>
+        </div>
+
+                
         
     </form>
 </body>
