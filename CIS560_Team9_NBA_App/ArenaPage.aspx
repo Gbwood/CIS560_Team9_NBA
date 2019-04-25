@@ -105,6 +105,7 @@
 
                 <div class="col-9">
                     <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1">
+                        <asp:ListItem> -- select an option -- </asp:ListItem>
                         <asp:ListItem> State Farm Arena</asp:ListItem>
                         <asp:ListItem>Boston Garden</asp:ListItem>
                         <asp:ListItem>Barclays Center</asp:ListItem>
