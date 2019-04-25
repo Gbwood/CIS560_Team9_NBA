@@ -141,7 +141,13 @@
                 <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas"  />
 
         </div>
+        <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
+                <Columns>
+                    <asp:CommandField ShowEditButton="True" />
+                </Columns>
 
+
+        </asp:GridView>
                 
         
     </form>
