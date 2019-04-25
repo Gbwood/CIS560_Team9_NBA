@@ -107,35 +107,35 @@
                     <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1">
                         <asp:ListItem> -- select an option -- </asp:ListItem>
                         <asp:ListItem>State Farm Arena</asp:ListItem>
-                        <asp:ListItem>Boston Garden</asp:ListItem>
+                        <asp:ListItem>TD Garden</asp:ListItem>
                         <asp:ListItem>Barclays Center</asp:ListItem>
-                        <asp:ListItem>Spectrum Center</asp:ListItem>
+                        <asp:ListItem>Time Warner Cable Arena</asp:ListItem>
                         <asp:ListItem>United Center</asp:ListItem>
-                        <asp:ListItem>Rocket Mortgage FieldHouse</asp:ListItem>
+                        <asp:ListItem>Quicken Loans Arena</asp:ListItem>
                         <asp:ListItem>American Airlines Center</asp:ListItem>
                         <asp:ListItem>Pepsi Center</asp:ListItem>
-                        <asp:ListItem>Little Caesars Arena</asp:ListItem>
-                        <asp:ListItem>Oracle Arena</asp:ListItem>
+                        <asp:ListItem>The Palace of Auburn Hills</asp:ListItem>
                         <asp:ListItem>Toyota Center</asp:ListItem>
                         <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
-                        <asp:ListItem>Staples Center - Lakers</asp:ListItem>
-                        <asp:ListItem>Staples Center - Clippers</asp:ListItem>
+                        <asp:ListItem>Staples Center</asp:ListItem>
+                        <asp:ListItem>Staples Center</asp:ListItem>
                         <asp:ListItem>FedExForum</asp:ListItem>
-                        <asp:ListItem>American Airlines Arena</asp:ListItem>
-                        <asp:ListItem>Fiserv Forum</asp:ListItem>
+                        <asp:ListItem>AmericanAirlines Arena</asp:ListItem>
+                        <asp:ListItem>Bradley Center</asp:ListItem>
                         <asp:ListItem>Target Center</asp:ListItem>
-                        <asp:ListItem>Smoothie King Center</asp:ListItem>
+                        <asp:ListItem>New Orleans Arena</asp:ListItem>
                         <asp:ListItem>Madison Square Garden</asp:ListItem>
+                        <asp:ListItem>Oracle Arena</asp:ListItem>
                         <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
                         <asp:ListItem>Amway Center</asp:ListItem>
                         <asp:ListItem>Wells Fargo Center</asp:ListItem>
-                        <asp:ListItem>Talking Stick Resort Arena</asp:ListItem>
-                        <asp:ListItem>Moda Center</asp:ListItem>
-                        <asp:ListItem>Golden 1 Center</asp:ListItem>
-                        <asp:ListItem>AT&amp;T Center</asp:ListItem>
-                        <asp:ListItem>Scotiabank Arena</asp:ListItem>
-                        <asp:ListItem>Vivint Smart Home Arena</asp:ListItem>
-                        <asp:ListItem>Capital One Arena</asp:ListItem>
+                        <asp:ListItem>US Airways Center</asp:ListItem>
+                        <asp:ListItem>Rose Garden</asp:ListItem>
+                        <asp:ListItem>Power Balance Pavilion</asp:ListItem>
+                        <asp:ListItem>EnergySolutions Arena</asp:ListItem>
+                        <asp:ListItem>AT&T Center</asp:ListItem>
+                        <asp:ListItem>Air Canada Centre</asp:ListItem>
+                        <asp:ListItem>Verizon Center</asp:ListItem>
                     </asp:DropDownList>
                     </div>
                 </div>
