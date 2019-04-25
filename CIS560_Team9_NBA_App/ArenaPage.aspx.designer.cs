@@ -22,24 +22,6 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.HtmlControls.HtmlForm HomeForm;
         
         /// <summary>
-        /// uxShowAllAreans control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button uxShowAllAreans;
-        
-        /// <summary>
-        /// uxArenaLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label uxArenaLabel;
-        
-        /// <summary>
         /// uxArenaDropdown control.
         /// </summary>
         /// <remarks>
@@ -47,5 +29,14 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList uxArenaDropdown;
+        
+        /// <summary>
+        /// uxShowAllAreans control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button uxShowAllAreans;
     }
 }

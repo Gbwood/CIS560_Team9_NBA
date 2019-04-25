@@ -120,7 +120,7 @@
             <div class="form-group row">
                 <label for="Height-input" class="col-3 col-form-label font-weight-bold" id="Height">Height</label>
                 <div class="col-9">
-                    <asp:TextBox ID="HeightInpute" placeholder="69 inches" type="Height" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="HeightInput" placeholder="69 inches" type="Height" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
             </div>
           

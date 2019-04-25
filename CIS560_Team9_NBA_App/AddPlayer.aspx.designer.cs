@@ -49,13 +49,13 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.WebControls.TextBox Birthday_input;
         
         /// <summary>
-        /// HeightInpute control.
+        /// HeightInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox HeightInpute;
+        protected global::System.Web.UI.WebControls.TextBox HeightInput;
         
         /// <summary>
         /// Submit control.
