@@ -22,22 +22,13 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.HtmlControls.HtmlForm HomeForm;
         
         /// <summary>
-        /// searchSubmit control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchSubmit;
-        
-        /// <summary>
-        /// uxCoachLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label uxCoachLabel;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// uxCoachDropdown control.
@@ -47,5 +38,14 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList uxCoachDropdown;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -107,7 +107,7 @@
                         <div class="row h-100 justify-content-center align-items-center">
                         <p class="lead">Created by: Tanner Bayless, Mitchell Blazer, Graham Wood, Tyler Trammell</p>
                         <p class="lead">App created for Educational purposes</p>
-                        <p class="lead">We do not own the rights to NBA and all trademarks belong by their respective owners</p>
+                        <p class="lead">We do not own the rights to NBA or any of it's trademarks. All trademarks belong by their respective owners</p>
                         </div>
                        
                      </div>

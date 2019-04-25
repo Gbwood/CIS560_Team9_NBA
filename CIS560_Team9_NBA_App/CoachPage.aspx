@@ -98,52 +98,52 @@
   </nav>
         <form id="HomeForm" runat="server">
         <!-- Page Content -->
-        <div class="container py-3 my-5" id="input">
-            <div class="row h-100 justify-content-center align-items-center">
-        <p>
-        <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search"/>
-        </p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;<asp:Label ID="uxCoachLabel" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Coach Info:"></asp:Label>
-        </p>
-        <div class ="col-9">
-            <asp:DropDownList ID="uxCoachDropdown" runat="server" TabIndex="1" OnSelectedIndexChanged="uxCoachDropdown_SelectedIndexChanged">
-                <asp:ListItem> -- select an option -- </asp:ListItem>
-                <asp:ListItem>Lloyd Pierce</asp:ListItem>
-                <asp:ListItem>Brad Stevens</asp:ListItem>
-                <asp:ListItem>Kenny Atkinson</asp:ListItem>
-                <asp:ListItem>James Borrego</asp:ListItem>
-                <asp:ListItem>Jim Boylen</asp:ListItem>
-                <asp:ListItem>Tyronn Lue</asp:ListItem>
-                <asp:ListItem>Rick Carlisle</asp:ListItem>
-                <asp:ListItem>Michael Malone</asp:ListItem>
-                <asp:ListItem>Dwane Casey	</asp:ListItem>
-                <asp:ListItem>Steve Kerr</asp:ListItem>
-                <asp:ListItem>Mike D&#39;Antoni</asp:ListItem>
-                <asp:ListItem>Nate McMillan</asp:ListItem>
-                <asp:ListItem>Doc Rivers</asp:ListItem>
-                <asp:ListItem>Luke Walton</asp:ListItem>
-                <asp:ListItem>J.B. Bickerstaff</asp:ListItem>
-                <asp:ListItem>Erik Spoelstra</asp:ListItem>
-                <asp:ListItem>Mike Budenholzer</asp:ListItem>
-                <asp:ListItem>Ryan Saunders</asp:ListItem>
-                <asp:ListItem>Alvin Gentry</asp:ListItem>
-                <asp:ListItem>David Fizdale</asp:ListItem>
-                <asp:ListItem>Billy Donovan</asp:ListItem>
-                <asp:ListItem>Steve Clifford	</asp:ListItem>
-                <asp:ListItem>Brett Brown</asp:ListItem>
-                <asp:ListItem>Igor Kokoskov</asp:ListItem>
-                <asp:ListItem>Terry Stotts</asp:ListItem>
-                <asp:ListItem>Dave Joerger</asp:ListItem>
-                <asp:ListItem>Gregg Popovich</asp:ListItem>
-                <asp:ListItem>Nick Nurse</asp:ListItem>
-                <asp:ListItem>Quin Snyder</asp:ListItem>
-                <asp:ListItem>Scott Brooks</asp:ListItem>
-                 </asp:DropDownList>
-            </div>
-       
+       <div class="container py-3 my-5" id="input">
+                    <div class="form-group row">
+                   
+                        <asp:Label ID="Label1" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text=" Select Coach"></asp:Label>
+                       
+                        <div class ="col-9">
+                            <asp:DropDownList ID="uxCoachDropdown" CssClass="form-control" runat="server" TabIndex="1" OnSelectedIndexChanged="uxCoachDropdown_SelectedIndexChanged">
+                                    <asp:ListItem> -- select an option -- </asp:ListItem>
+                                    <asp:ListItem>Lloyd Pierce</asp:ListItem>
+                                    <asp:ListItem>Brad Stevens</asp:ListItem>
+                                    <asp:ListItem>Kenny Atkinson</asp:ListItem>
+                                    <asp:ListItem>James Borrego</asp:ListItem>
+                                    <asp:ListItem>Jim Boylen</asp:ListItem>
+                                    <asp:ListItem>Tyronn Lue</asp:ListItem>
+                                    <asp:ListItem>Rick Carlisle</asp:ListItem>
+                                    <asp:ListItem>Michael Malone</asp:ListItem>
+                                    <asp:ListItem>Dwane Casey	</asp:ListItem>
+                                    <asp:ListItem>Steve Kerr</asp:ListItem>
+                                    <asp:ListItem>Mike D&#39;Antoni</asp:ListItem>
+                                    <asp:ListItem>Nate McMillan</asp:ListItem>
+                                    <asp:ListItem>Doc Rivers</asp:ListItem>
+                                    <asp:ListItem>Luke Walton</asp:ListItem>
+                                    <asp:ListItem>J.B. Bickerstaff</asp:ListItem>
+                                    <asp:ListItem>Erik Spoelstra</asp:ListItem>
+                                    <asp:ListItem>Mike Budenholzer</asp:ListItem>
+                                    <asp:ListItem>Ryan Saunders</asp:ListItem>
+                                    <asp:ListItem>Alvin Gentry</asp:ListItem>
+                                    <asp:ListItem>David Fizdale</asp:ListItem>
+                                    <asp:ListItem>Billy Donovan</asp:ListItem>
+                                    <asp:ListItem>Steve Clifford	</asp:ListItem>
+                                    <asp:ListItem>Brett Brown</asp:ListItem>
+                                    <asp:ListItem>Igor Kokoskov</asp:ListItem>
+                                    <asp:ListItem>Terry Stotts</asp:ListItem>
+                                    <asp:ListItem>Dave Joerger</asp:ListItem>
+                                    <asp:ListItem>Gregg Popovich</asp:ListItem>
+                                    <asp:ListItem>Nick Nurse</asp:ListItem>
+                                    <asp:ListItem>Quin Snyder</asp:ListItem>
+                                    <asp:ListItem>Scott Brooks</asp:ListItem>
+                                     </asp:DropDownList>
+                                </div>
+                    </div>
+                        <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="searchSubmit_Click" Text="Search"/>
+           </div>
     </form>
+    
+</body>
+</html>
 
 
