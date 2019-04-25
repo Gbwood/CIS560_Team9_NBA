@@ -100,11 +100,54 @@
 
     
     <form id="AddPlayerForm" runat="server">
+        <!-- Page Content -->
+        <div class="container py-3 my-5" id="input">
+            <div class="form-group row">
+                <label for="Tname-input" class="col-3 col-form-label font-weight-bold" id="lblHomeTeam">Home Team Name</label>
+                <div class="col-9">
+                    <asp:TextBox ID="HTName_input" placeholder="Wildcats" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lname-input" class="col-3 col-form-label font-weight-bold" id="lblAwayTeam">Away Team Name</label>
+                <div class="col-9">
+                    <asp:TextBox ID="ATName_input" placeholder="KU" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Arena_input" class="col-3 col-form-label font-weight-bold" id="lblArena">Arena Name</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Arena_input" placeholder="Bramledge" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="HScore-input" class="col-3 col-form-label font-weight-bold" id="lblHomeScore">Home Score</label>
+                <div class="col-9">
+                    <asp:TextBox ID="HScore_input" placeholder= 69 type="int" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="AScore_input" class="col-3 col-form-label font-weight-bold" id="lblAwayScore">Away Score</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Ascore_input" placeholder= 69 type="int" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="TeamWinner" class="col-3 col-form-label font-weight-bold" id="lblTeamWinner">Winning Team Name</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Winner_input" placeholder= "Wildcats" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
 
-
-
-
-
+            <asp:Button ID="Submit" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Add Game" OnClick="Submit_Click" />
+        </div>
+            
     </form>
+
+
+
+
+
+ 
 </body>
 </html>

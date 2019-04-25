@@ -18,5 +18,10 @@ namespace CIS560_Team9_NBA_App
         {
 
         }
+
+        protected void btnPlayerAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

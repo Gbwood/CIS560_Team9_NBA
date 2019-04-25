@@ -96,9 +96,11 @@
   </nav>
 
          <form id="HomeForm" runat="server">
-         
+                                 <asp:Button ID="btnPLayerAdd" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Add Player" OnClick="btnPlayerAdd_Click" PostBackUrl="~/AddPlayer.aspx" />
+
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
+
                     <div class="form-group row">
                         <label for="lname-input" class="col-3 col-form-label font-weight-bold">Search Player</label>
                         <div>

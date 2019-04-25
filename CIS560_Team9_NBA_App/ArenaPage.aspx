@@ -95,7 +95,7 @@
       </div>
     </div>
   </nav>
-<body>
+
     <form id="HomeForm" runat="server">
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
