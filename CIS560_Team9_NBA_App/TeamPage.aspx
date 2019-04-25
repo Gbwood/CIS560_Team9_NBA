@@ -99,7 +99,8 @@
                         <asp:Label ID="Label1" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text=" Select Team"></asp:Label>
                     
                         <div class="col-9">
-                            <asp:DropDownList ID="uxTeamDropdown" runat="server" TabIndex="1" CssClass="form-control">
+                            <asp:DropDownList ID="uxTeamDropdown" runat="server" TabIndex="-1" CssClass="form-control" OnSelectedIndexChanged="uxTeamDropdown_SelectedIndexChanged">
+                                <asp:ListItem> -- select an option -- </asp:ListItem>
                                 <asp:ListItem>Atlanta Hawks</asp:ListItem>
                                 <asp:ListItem>Boston Celtics</asp:ListItem>
                                 <asp:ListItem>Brooklyn Nets</asp:ListItem>

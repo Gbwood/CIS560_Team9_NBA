@@ -13,5 +13,10 @@ namespace CIS560_Team9_NBA_App
         {
 
         }
+
+        protected void searchSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

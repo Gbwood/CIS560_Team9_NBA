@@ -94,5 +94,26 @@
     </div>
   </nav>
             <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddGame.aspx" Text="Add a Game" />
+            <div class="container py-3 my-5" id="input">
+            <div class="input-group py-0" style="padding-top: 20%; top: 0px; left: 0px;">
+                <asp:TextBox id="searchBox" placeholder="Game Search" CssClass="form-control col-form-label-lg" runat="server" />
+                <asp:DropDownList ID="searchBoxDrop" runat="server" DataSourceID="" AppendDataBoundItems="true" CssClass="custom-select form-control col-form-label-lg h-auto">
+                    <asp:ListItem Text="Please select an option..." Value="" />
+                </asp:DropDownList>
+            </div>
+            <div class="form-inline col-12">
+                <asp:RadioButton runat="server" groupname="connected" id="Arena" Text="Arena" Checked/>
+                <label class="form-check-label font-weight-bold mx-1" for="ArenaRadio"></label> 
+
+                <asp:RadioButton runat="server" groupname="connected" id="TeamNameRadio" Text="Team Name"/>
+                <label class="form-check-label font-weight-bold mx-1" for="TeamNameRadio"></label>
+
+                <asp:RadioButton runat="server" groupname="connected" id="DateRadio" Text="Date"/>
+                <label class="form-check-label font-weight-bold mx-1" for="DateRadio"></label>
+                
+       
+                <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search" />
+            </div>
+        </div>
 </form>
 </html>

@@ -11,6 +11,11 @@ namespace CIS560_Team9_NBA_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            uxTeamDropdown.SelectedIndex = -1;
+        }
+
+        protected void uxTeamDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
