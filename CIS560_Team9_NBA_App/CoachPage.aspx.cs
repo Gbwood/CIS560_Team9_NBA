@@ -23,5 +23,10 @@ namespace CIS560_Team9_NBA_App
         {
             //uxCoachDropdown.SelectedIndex = 5;
         }
+
+        protected void searchSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

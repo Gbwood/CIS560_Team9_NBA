@@ -101,7 +101,7 @@
         <div class="container py-3 my-5" id="input">
             <div class="row h-100 justify-content-center align-items-center">
         <p>
-        <asp:Button ID="uxShowAllCoaches" runat="server" Text="Show All Coaches" Width="196px" OnClick="uxShowAllCoaches_Click" />
+        <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search"/>
         </p>
         <p>
             &nbsp;</p>

@@ -58,7 +58,7 @@
 
 <body>
 
-    <form id="form1" runat="server">
+
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -95,7 +95,17 @@
     </div>
   </nav>
 
-        <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddPlayer.aspx" Text="Add a Player" />
+         <form id="HomeForm" runat="server">
+         
+             <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddPlayer.aspx" Text="Add a Player" />
+        <!-- Page Content -->
+        <div class="container py-3 my-5" id="input">
+                    <div class="form-group row">
+                        </div>
+
+        
+        <asp:TextBox ID="uxSearchPlayerTB" runat="server" Width="346px"></asp:TextBox>
+        <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search Player"/>
     </form>
 
 
