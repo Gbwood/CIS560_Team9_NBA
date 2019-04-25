@@ -95,7 +95,7 @@
   </nav>
             <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddGame.aspx" Text="Add a Game" />
             <div class="container py-3 my-5" id="input">
-            <div class="input-group py-0" style="padding-top: 20%; top: 0px; left: 0px;">
+                <div class="input-group py-0" style="padding-top: 20%; top: 0px; left: 0px;">
                 <asp:TextBox id="searchBox" placeholder="Game Search" CssClass="form-control col-form-label-lg" runat="server" />
                 <asp:DropDownList ID="searchBoxDrop" runat="server" DataSourceID="" AppendDataBoundItems="true" CssClass="custom-select form-control col-form-label-lg h-auto">
                     <asp:ListItem Text="Please select an option..." Value="" />
