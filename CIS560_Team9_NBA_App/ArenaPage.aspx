@@ -59,6 +59,8 @@
    
 
   <!-- Navigation -->
+
+    <form id="HomeForm" runat="server">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="Home.aspx">NBA Management Application</a>
@@ -96,7 +98,6 @@
     </div>
   </nav>
 
-    <form id="HomeForm" runat="server">
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
         
@@ -104,48 +105,17 @@
                     <asp:Label ID="ArenaLabel" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text="Select Arena"></asp:Label>
 
                 <div class="col-9">
-                    <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1">
-                        <asp:ListItem> -- select an option -- </asp:ListItem>
-                        <asp:ListItem>State Farm Arena</asp:ListItem>
-                        <asp:ListItem>TD Garden</asp:ListItem>
-                        <asp:ListItem>Barclays Center</asp:ListItem>
-                        <asp:ListItem>Time Warner Cable Arena</asp:ListItem>
-                        <asp:ListItem>United Center</asp:ListItem>
-                        <asp:ListItem>Quicken Loans Arena</asp:ListItem>
-                        <asp:ListItem>American Airlines Center</asp:ListItem>
-                        <asp:ListItem>Pepsi Center</asp:ListItem>
-                        <asp:ListItem>The Palace of Auburn Hills</asp:ListItem>
-                        <asp:ListItem>Toyota Center</asp:ListItem>
-                        <asp:ListItem>Bankers Life Fieldhouse</asp:ListItem>
-                        <asp:ListItem>Staples Center</asp:ListItem>
-                        <asp:ListItem>Staples Center</asp:ListItem>
-                        <asp:ListItem>FedExForum</asp:ListItem>
-                        <asp:ListItem>AmericanAirlines Arena</asp:ListItem>
-                        <asp:ListItem>Bradley Center</asp:ListItem>
-                        <asp:ListItem>Target Center</asp:ListItem>
-                        <asp:ListItem>New Orleans Arena</asp:ListItem>
-                        <asp:ListItem>Madison Square Garden</asp:ListItem>
-                        <asp:ListItem>Oracle Arena</asp:ListItem>
-                        <asp:ListItem>Chesapeake Energy Arena</asp:ListItem>
-                        <asp:ListItem>Amway Center</asp:ListItem>
-                        <asp:ListItem>Wells Fargo Center</asp:ListItem>
-                        <asp:ListItem>US Airways Center</asp:ListItem>
-                        <asp:ListItem>Rose Garden</asp:ListItem>
-                        <asp:ListItem>Power Balance Pavilion</asp:ListItem>
-                        <asp:ListItem>EnergySolutions Arena</asp:ListItem>
-                        <asp:ListItem>AT&T Center</asp:ListItem>
-                        <asp:ListItem>Air Canada Centre</asp:ListItem>
-                        <asp:ListItem>Verizon Center</asp:ListItem>
+                    <asp:DropDownList ID="uxArenaDropdown" runat="server" CssClass="form-control" TabIndex="1"  DataTextField="Venue" DataValueField="Venue" OnSelectedIndexChanged="uxArenaDropdown_SelectedIndexChanged1" DataSourceID="SqlDataSource1">
+                        
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NBALeagueConnectionString %>" SelectCommand="Select Venue from League.Arena"></asp:SqlDataSource>
                     </div>
                 </div>
-                <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas"  />
+                <asp:Button ID="uxShowAllAreans" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Search" OnClick="uxShowAllAreans_Click1"  />
+                    <asp:Button ID="Button2" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Arenas" OnClick="Button2_Click"   />
 
         </div>
         <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
-                <Columns>
-                    <asp:CommandField ShowEditButton="True" />
-                </Columns>
 
 
         </asp:GridView>

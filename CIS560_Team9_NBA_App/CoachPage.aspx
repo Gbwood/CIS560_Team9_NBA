@@ -104,7 +104,7 @@
                         <asp:Label ID="Label1" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text=" Select Coach"></asp:Label>
                        
                         <div class ="col-9">
-                            <asp:DropDownList ID="uxCoachDropdown" CssClass="form-control" runat="server" TabIndex="1" OnSelectedIndexChanged="uxCoachDropdown_SelectedIndexChanged">
+                            <asp:DropDownList ID="uxCoachDropdown" CssClass="form-control" runat="server" TabIndex="1" OnSelectedIndexChanged="uxCoachDropdown_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="LastName" DataValueField="LastName" >
                                     <asp:ListItem> -- select an option -- </asp:ListItem>
                                     <asp:ListItem>Lloyd Pierce</asp:ListItem>
                                     <asp:ListItem>Brad Stevens</asp:ListItem>
@@ -137,14 +137,12 @@
                                     <asp:ListItem>Quin Snyder</asp:ListItem>
                                     <asp:ListItem>Scott Brooks</asp:ListItem>
                                      </asp:DropDownList>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NBALeagueConnectionString %>" SelectCommand="Select LastName from League.Coaches"></asp:SqlDataSource>
                                 </div>
                     </div>
                         <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="searchSubmit_Click" Text="Search"/>
            </div>
             <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
-                <Columns>
-                    <asp:CommandField ShowEditButton="True" />
-                </Columns>
 
 
         </asp:GridView>
