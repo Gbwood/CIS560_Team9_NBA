@@ -126,7 +126,7 @@
             <div class="form-group row">
                 <label for="Number-input" class="col-3 col-form-label font-weight-bold" id="PlayerNumber">Number</label>
                 <div class="col-9">
-                    <asp:TextBox ID="Number_input" placeholder="69" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="PlayerNumber_input" placeholder="69" type="text" CssClass="form-control" runat="server" OnTextChanged="Number_input_TextChanged"></asp:TextBox>
                 </div>
             </div>
             <div class="form-group row">
@@ -145,6 +145,8 @@
 
             <asp:Button ID="Submit" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Add Player" OnClick="Submit_Click" />
         </div>
+            
+            <asp:Label ID="lblmsg" runat="server"></asp:Label>
             
     </form>
 </body>

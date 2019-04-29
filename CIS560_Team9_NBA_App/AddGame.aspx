@@ -138,9 +138,29 @@
                     <asp:TextBox ID="Winner_input" placeholder= "Wildcats" type="text" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
             </div>
+             <div class="form-group row">
+                <label for="Attendance" class="col-3 col-form-label font-weight-bold" id="lblAttendance">Attendance</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Attendance_input" placeholder= "18962" type="int" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label for="Date" class="col-3 col-form-label font-weight-bold" id="Date">Date</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Date_input" placeholder= "11/11/18" type="Date" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label for="Start" class="col-3 col-form-label font-weight-bold" id="StartTimelbl">Start Time</label>
+                <div class="col-9">
+                    <asp:TextBox ID="Time_input" placeholder= "6:00" type="text" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+            </div>
 
             <asp:Button ID="Submit" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Add Game" OnClick="Submit_Click" />
         </div>
+            
+        <asp:Label ID="lblmsg" runat="server"></asp:Label>
             
     </form>
 

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
 
 namespace CIS560_Team9_NBA_App
 {
@@ -16,7 +19,30 @@ namespace CIS560_Team9_NBA_App
 
         protected void Submit_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
 
+
+            SqlCommand cmd = new SqlCommand("League.AddGame", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            // If you are passing any parameters to your Stored procedure 
+            cmd.Parameters.AddWithValue("@HomeTeam", SqlDbType.NVarChar).Value = HTName_input.Text;
+            cmd.Parameters.AddWithValue("@AwayTeam", SqlDbType.NVarChar).Value = ATName_input.Text;
+            cmd.Parameters.AddWithValue("@Arena", SqlDbType.NVarChar).Value = Arena_input.Text;
+            cmd.Parameters.AddWithValue("@HomeScore", SqlDbType.NVarChar).Value = HScore_input.Text;
+            cmd.Parameters.AddWithValue("@AwayScore", SqlDbType.Int).Value = Ascore_input.Text;
+            cmd.Parameters.AddWithValue("@WinningTeam", SqlDbType.NVarChar).Value = Winner_input.Text;
+            cmd.Parameters.AddWithValue("@Attendance", SqlDbType.Int).Value = Attendance_input.Text;
+            cmd.Parameters.AddWithValue("@Date", SqlDbType.NVarChar).Value = Date_input.Text;
+            cmd.Parameters.AddWithValue("@StartTime", SqlDbType.NVarChar).Value = Time_input.Text;
+            con.Open();
+            int k = cmd.ExecuteNonQuery();
+            if (k != 0)
+            {
+                lblmsg.Text = "Record Inserted Succesfully into the Database";
+                lblmsg.ForeColor = System.Drawing.Color.CornflowerBlue;
+            }
+            con.Close();
         }
     }
 }

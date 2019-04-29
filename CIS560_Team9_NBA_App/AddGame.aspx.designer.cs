@@ -76,6 +76,33 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.WebControls.TextBox Winner_input;
         
         /// <summary>
+        /// Attendance_input control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Attendance_input;
+        
+        /// <summary>
+        /// Date_input control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Date_input;
+        
+        /// <summary>
+        /// Time_input control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Time_input;
+        
+        /// <summary>
         /// Submit control.
         /// </summary>
         /// <remarks>
@@ -83,5 +110,14 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Submit;
+        
+        /// <summary>
+        /// lblmsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmsg;
     }
 }
