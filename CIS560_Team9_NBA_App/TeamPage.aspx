@@ -143,7 +143,7 @@
             <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 " OnSelectedIndexChanged="GridView2_SelectedIndexChanged" OnRowCommand="GridView2_RowCommand">
                 <Columns>
                    
-                    <asp:ButtonField ButtonType="Button" Text="Show Roster" />
+                    <asp:ButtonField ButtonType="Button" Text="Show Roster"/>
                    
                 </Columns>
 
