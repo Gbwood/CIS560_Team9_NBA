@@ -52,5 +52,18 @@ namespace CIS560_Team9_NBA_App
             GridView2.DataBind();
             con.Close();
         }
+
+     
+
+        protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            string teamName = GridView2.Rows[Convert.ToInt16(e.CommandArgument.ToString())].Cells[1].Text;
+            Label2.Text = teamName;
+        }
     }
 }

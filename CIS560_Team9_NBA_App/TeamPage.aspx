@@ -140,10 +140,19 @@
                      <asp:Button ID="uxShowAllTeams" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Teams" OnClick="uxShowAllTeams_Click"  />
 
                 </div>
-            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
+            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 " OnSelectedIndexChanged="GridView2_SelectedIndexChanged" OnRowCommand="GridView2_RowCommand">
+                <Columns>
+                   
+                    <asp:ButtonField ButtonType="Button" Text="Show Roster" />
+                   
+                </Columns>
 
 
         </asp:GridView>
+ 
+
+
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
  
 
 
