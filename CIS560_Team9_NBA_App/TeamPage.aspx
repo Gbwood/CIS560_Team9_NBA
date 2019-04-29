@@ -99,7 +99,7 @@
                         <asp:Label ID="Label1" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text=" Select Team"></asp:Label>
                     
                         <div class="col-9">
-                            <asp:DropDownList ID="uxTeamDropdown" runat="server" TabIndex="-1" CssClass="form-control" OnSelectedIndexChanged="uxTeamDropdown_SelectedIndexChanged">
+                            <asp:DropDownList ID="uxTeamDropdown" runat="server" TabIndex="-1" CssClass="form-control" OnSelectedIndexChanged="uxTeamDropdown_SelectedIndexChanged" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="TeamName" DataValueField="TeamName">
                                 <asp:ListItem> -- select an option -- </asp:ListItem>
                                 <asp:ListItem>Atlanta Hawks</asp:ListItem>
                                 <asp:ListItem>Boston Celtics</asp:ListItem>
@@ -132,24 +132,18 @@
                                 <asp:ListItem>Utah Jazz</asp:ListItem>
                                 <asp:ListItem>Washington Wizards</asp:ListItem>
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:NBALeagueConnectionString %>" SelectCommand="SELECT [TeamName] FROM League.[Team]"></asp:SqlDataSource>
                         </div>
            
                     </div>
             
-                     <asp:Button ID="uxShowAllTeams" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Teams"  />
+                     <asp:Button ID="uxShowAllTeams" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Show All Teams" OnClick="uxShowAllTeams_Click"  />
 
                 </div>
-            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 " DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:CommandField ShowEditButton="True" />
-                </Columns>
+            <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
 
 
         </asp:GridView>
- 
-
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
  
 
 
