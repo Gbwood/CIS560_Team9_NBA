@@ -113,9 +113,6 @@
 
                 </div>
             <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
-                <Columns>
-                    <asp:CommandField ShowEditButton="True" />
-                </Columns>
 
 
         </asp:GridView>

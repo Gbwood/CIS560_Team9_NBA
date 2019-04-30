@@ -132,12 +132,7 @@
                     <asp:TextBox ID="Ascore_input" placeholder= 69 type="int" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="TeamWinner" class="col-3 col-form-label font-weight-bold" id="lblTeamWinner">Winning Team Name</label>
-                <div class="col-9">
-                    <asp:TextBox ID="Winner_input" placeholder= "Wildcats" type="text" CssClass="form-control" runat="server"></asp:TextBox>
-                </div>
-            </div>
+         
              <div class="form-group row">
                 <label for="Attendance" class="col-3 col-form-label font-weight-bold" id="lblAttendance">Attendance</label>
                 <div class="col-9">

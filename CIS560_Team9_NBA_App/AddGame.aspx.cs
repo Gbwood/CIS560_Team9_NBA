@@ -32,7 +32,7 @@ namespace CIS560_Team9_NBA_App
             cmd.Parameters.AddWithValue("@Arena", SqlDbType.NVarChar).Value = Arena_input.Text;
             cmd.Parameters.AddWithValue("@HomeScore", SqlDbType.NVarChar).Value = HScore_input.Text;
             cmd.Parameters.AddWithValue("@AwayScore", SqlDbType.Int).Value = Ascore_input.Text;
-            cmd.Parameters.AddWithValue("@WinningTeam", SqlDbType.NVarChar).Value = Winner_input.Text;
+                cmd.Parameters.AddWithValue("@WinningTeam", SqlDbType.NVarChar).Value = WinningTeam(Convert.ToInt16(HScore_input.Text), Convert.ToInt16(Ascore_input.Text));
             cmd.Parameters.AddWithValue("@Attendance", SqlDbType.Int).Value = Attendance_input.Text;
             cmd.Parameters.AddWithValue("@Date", SqlDbType.NVarChar).Value = Date_input.Text;
             cmd.Parameters.AddWithValue("@StartTime", SqlDbType.NVarChar).Value = Time_input.Text;
@@ -50,6 +50,12 @@ namespace CIS560_Team9_NBA_App
                 con.Close();
                 Response.Write("Query Failed. Check input or connection to database");
             }
+        }
+
+        private string WinningTeam(int HomeScore, int AwayScore)
+        {
+            if (HomeScore > AwayScore) return HTName_input.Text;
+            return ATName_input.Text;
         }
     }
 }
