@@ -20,6 +20,7 @@ namespace CIS560_Team9_NBA_App
         protected void Submit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
+            try { 
             con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
 
 
@@ -43,6 +44,12 @@ namespace CIS560_Team9_NBA_App
                 lblmsg.ForeColor = System.Drawing.Color.CornflowerBlue;
             }
             con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                Response.Write("Query Failed. Check input or connection to database");
+            }
         }
     }
 }

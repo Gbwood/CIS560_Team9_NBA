@@ -93,7 +93,7 @@
       </div>
     </div>
   </nav>
-            <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddGame.aspx" Text="Add a Game" />
+            <asp:Button ID="btn_AddPlayer" runat="server" CssClass="btn btn-primary btn-lg btn-block" PostBackUrl="~/AddGame.aspx" Text="Add a Game" OnClick="btn_AddPlayer_Click" />
             <div class="container py-3 my-5" id="input">
                 <div class="input-group py-0" style="padding-top: 20%; top: 0px; left: 0px;">
                 <asp:DropDownList ID="ArenaDropDown" runat="server" AppendDataBoundItems="True" CssClass="custom-select form-control col-form-label-lg h-auto" DataTextField="Venue" DataValueField="Venue" DataSourceID="ArenaAdapter"></asp:DropDownList>
