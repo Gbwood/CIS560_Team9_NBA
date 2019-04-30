@@ -67,13 +67,13 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// Arena control.
+        /// ArenaRadio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Arena;
+        protected global::System.Web.UI.WebControls.RadioButton ArenaRadio;
         
         /// <summary>
         /// TeamNameRadio control.
@@ -83,6 +83,15 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton TeamNameRadio;
+        
+        /// <summary>
+        /// BothRadio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton BothRadio;
         
         /// <summary>
         /// searchSubmit control.

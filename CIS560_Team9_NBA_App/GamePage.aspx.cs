@@ -19,10 +19,11 @@ namespace CIS560_Team9_NBA_App
 
         protected void searchSubmit_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection();
             if (TeamNameRadio.Checked)
             {
                 
-                SqlConnection con = new SqlConnection();
+                
                 try
                 {
                     con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
@@ -45,9 +46,9 @@ namespace CIS560_Team9_NBA_App
                     Response.Write("Query Failed. Check input or connection to database");
                 }
             }
-            else
+            else if (ArenaRadio.Checked)
             {
-                SqlConnection con = new SqlConnection();
+                
                 try
                 {
                     con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
@@ -57,6 +58,34 @@ namespace CIS560_Team9_NBA_App
                     cmd.CommandType = CommandType.StoredProcedure;
                     // If you are passing any parameters to your Stored procedure 
                     cmd.Parameters.AddWithValue("@userinput", SqlDbType.NVarChar).Value = ArenaDropDown.SelectedValue.ToString();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    GridView2.DataSource = dt;
+                    GridView2.DataBind();
+
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    con.Close();
+                    Response.Write("Query Failed. Check input or connection to database");
+                }
+
+            }
+            else
+            {
+               
+                try
+                {
+                    con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
+
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("League.GamesByBoth", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    // If you are passing any parameters to your Stored procedure 
+                    cmd.Parameters.AddWithValue("@ArenaName", SqlDbType.NVarChar).Value = ArenaDropDown.SelectedValue.ToString();
+                    cmd.Parameters.AddWithValue("@TeamName", SqlDbType.NVarChar).Value = TeamName.SelectedValue.ToString();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);

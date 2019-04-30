@@ -110,12 +110,14 @@
                 
             </div>
             <div class="form-inline col-12">
-                <asp:RadioButton runat="server" groupname="connected" id="Arena" Text="Arena" Checked/>
+                <asp:RadioButton runat="server" groupname="connected" id="ArenaRadio" Text="Arena" Checked/>
                 <label class="form-check-label font-weight-bold mx-1" for="ArenaRadio"></label> 
 
                 <asp:RadioButton runat="server" groupname="connected" id="TeamNameRadio" Text="Team Name"/>
                 <label class="form-check-label font-weight-bold mx-1" for="TeamNameRadio"></label>
 
+                 <asp:RadioButton runat="server" groupname="connected" id="BothRadio" Text="Both"/>
+                <label class="form-check-label font-weight-bold mx-1" for="BothRadio"></label>
        
                 <asp:Button ID="searchSubmit" runat="server" CssClass="btn btn-primary m-1 px-5 float-right" OnClick="searchSubmit_Click" Text="Search" />
             </div>
