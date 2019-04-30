@@ -27,15 +27,15 @@ namespace CIS560_Team9_NBA_App
             SqlCommand cmd = new SqlCommand("League.AddGame", con);
             cmd.CommandType = CommandType.StoredProcedure;
             // If you are passing any parameters to your Stored procedure 
-            cmd.Parameters.AddWithValue("@HomeTeam", SqlDbType.NVarChar).Value = HTName_input.Text;
-            cmd.Parameters.AddWithValue("@AwayTeam", SqlDbType.NVarChar).Value = ATName_input.Text;
-            cmd.Parameters.AddWithValue("@Arena", SqlDbType.NVarChar).Value = Arena_input.Text;
-            cmd.Parameters.AddWithValue("@HomeScore", SqlDbType.NVarChar).Value = HScore_input.Text;
-            cmd.Parameters.AddWithValue("@AwayScore", SqlDbType.Int).Value = Ascore_input.Text;
+            cmd.Parameters.AddWithValue("@HomeTeam", SqlDbType.NVarChar).Value = HTName_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@AwayTeam", SqlDbType.NVarChar).Value = ATName_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@Arena", SqlDbType.NVarChar).Value = Arena_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@HomeScore", SqlDbType.NVarChar).Value = HScore_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@AwayScore", SqlDbType.Int).Value = Ascore_input.Text.Trim();
                 cmd.Parameters.AddWithValue("@WinningTeam", SqlDbType.NVarChar).Value = WinningTeam(Convert.ToInt16(HScore_input.Text), Convert.ToInt16(Ascore_input.Text));
-            cmd.Parameters.AddWithValue("@Attendance", SqlDbType.Int).Value = Attendance_input.Text;
-            cmd.Parameters.AddWithValue("@Date", SqlDbType.NVarChar).Value = Date_input.Text;
-            cmd.Parameters.AddWithValue("@StartTime", SqlDbType.NVarChar).Value = Time_input.Text;
+            cmd.Parameters.AddWithValue("@Attendance", SqlDbType.Int).Value = Attendance_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@Date", SqlDbType.NVarChar).Value = Date_input.Text.Trim();
+            cmd.Parameters.AddWithValue("@StartTime", SqlDbType.NVarChar).Value = Time_input.Text.Trim();
             con.Open();
             int k = cmd.ExecuteNonQuery();
             if (k != 0)
@@ -54,8 +54,8 @@ namespace CIS560_Team9_NBA_App
 
         private string WinningTeam(int HomeScore, int AwayScore)
         {
-            if (HomeScore > AwayScore) return HTName_input.Text;
-            return ATName_input.Text;
+            if (HomeScore > AwayScore) return HTName_input.Text.Trim();
+            return ATName_input.Text.Trim();
         }
     }
 }

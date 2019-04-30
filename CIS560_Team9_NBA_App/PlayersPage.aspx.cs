@@ -30,7 +30,7 @@ namespace CIS560_Team9_NBA_App
                 SqlCommand cmd = new SqlCommand("League.SearchedPlayer", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 // If you are passing any parameters to your Stored procedure 
-                cmd.Parameters.AddWithValue("@PlayerName", SqlDbType.NVarChar).Value = uxSearchPlayerTB.Text;
+                cmd.Parameters.AddWithValue("@PlayerName", SqlDbType.NVarChar).Value = uxSearchPlayerTB.Text.Trim();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

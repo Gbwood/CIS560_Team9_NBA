@@ -28,13 +28,13 @@ namespace CIS560_Team9_NBA_App
                 SqlCommand cmd = new SqlCommand("League.AddPlayer", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 // If you are passing any parameters to your Stored procedure 
-                cmd.Parameters.AddWithValue("@FirstName", SqlDbType.NVarChar).Value = FirstName_input.Text;
-                cmd.Parameters.AddWithValue("@LastName", SqlDbType.NVarChar).Value = LastName_input.Text;
-                cmd.Parameters.AddWithValue("@TeamName", SqlDbType.NVarChar).Value = TeamInput.Text;
-                cmd.Parameters.AddWithValue("@Height", SqlDbType.NVarChar).Value = HeightInput.Text;
-                cmd.Parameters.AddWithValue("@PlayerNumber", SqlDbType.Int).Value = PlayerNumber_input.Text;
-                cmd.Parameters.AddWithValue("@PlayerPosition", SqlDbType.NVarChar).Value = PositionInput.Text;
-                cmd.Parameters.AddWithValue("@PlayerAge", SqlDbType.Int).Value = Age_input.Text;
+                cmd.Parameters.AddWithValue("@FirstName", SqlDbType.NVarChar).Value = FirstName_input.Text.Trim();
+                cmd.Parameters.AddWithValue("@LastName", SqlDbType.NVarChar).Value = LastName_input.Text.Trim();
+                cmd.Parameters.AddWithValue("@TeamName", SqlDbType.NVarChar).Value = TeamInput.Text.Trim();
+                cmd.Parameters.AddWithValue("@Height", SqlDbType.NVarChar).Value = HeightInput.Text.Trim();
+                cmd.Parameters.AddWithValue("@PlayerNumber", SqlDbType.Int).Value = PlayerNumber_input.Text.Trim();
+                cmd.Parameters.AddWithValue("@PlayerPosition", SqlDbType.NVarChar).Value = PositionInput.Text.Trim();
+                cmd.Parameters.AddWithValue("@PlayerAge", SqlDbType.Int).Value = Age_input.Text.Trim();
                 con.Open();
                 int k = cmd.ExecuteNonQuery();
                 if (k != 0)
