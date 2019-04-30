@@ -11,7 +11,7 @@ namespace CIS560_Team9_NBA_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("Home.aspx");
         }
     }
 }
