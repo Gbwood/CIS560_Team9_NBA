@@ -31,22 +31,40 @@ namespace CIS560_Team9_NBA_App {
         protected global::System.Web.UI.WebControls.Button btn_AddPlayer;
         
         /// <summary>
-        /// searchBox control.
+        /// ArenaDropDown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchBox;
+        protected global::System.Web.UI.WebControls.DropDownList ArenaDropDown;
         
         /// <summary>
-        /// searchBoxDrop control.
+        /// ArenaAdapter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList searchBoxDrop;
+        protected global::System.Web.UI.WebControls.SqlDataSource ArenaAdapter;
+        
+        /// <summary>
+        /// TeamName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TeamName;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// Arena control.
@@ -65,15 +83,6 @@ namespace CIS560_Team9_NBA_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton TeamNameRadio;
-        
-        /// <summary>
-        /// DateRadio control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton DateRadio;
         
         /// <summary>
         /// searchSubmit control.

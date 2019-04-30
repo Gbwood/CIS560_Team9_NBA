@@ -141,6 +141,8 @@
                                 </div>
                     </div>
                         <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="searchSubmit_Click" Text="Search"/>
+                        <asp:Button ID="Button2" runat="server" CssClass="btn btn-primary btn-lg btn-block"  Text="Show All Coaches" OnClick="Button2_Click"/>
+
            </div>
             <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
 

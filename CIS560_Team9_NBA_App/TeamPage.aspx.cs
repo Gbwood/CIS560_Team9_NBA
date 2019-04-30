@@ -14,11 +14,11 @@ namespace CIS560_Team9_NBA_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            uxTeamDropdown.SelectedIndex = -1;
         }
 
         protected void uxTeamDropdown_SelectedIndexChanged(object sender, EventArgs e)
         {
+            GridView2.Columns[0].Visible = true;
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
 
@@ -37,6 +37,8 @@ namespace CIS560_Team9_NBA_App
 
         protected void uxShowAllTeams_Click(object sender, EventArgs e)
         {
+            GridView2.Columns[0].Visible = true ;
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
 
@@ -62,8 +64,24 @@ namespace CIS560_Team9_NBA_App
 
         protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            string teamName = GridView2.Rows[Convert.ToInt16(e.CommandArgument.ToString())].Cells[1].Text;
-            Label2.Text = teamName;
+           
+
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=560final.database.windows.net;Initial Catalog=NBALeague;User ID=Team9;Password=tzdkD4mW";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand("League.TeamRoster", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            // If you are passing any parameters to your Stored procedure 
+            cmd.Parameters.AddWithValue("@TeamName", SqlDbType.NVarChar).Value = GridView2.Rows[Convert.ToInt16(e.CommandArgument.ToString())].Cells[1].Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            GridView2.DataSource = dt;
+            GridView2.DataBind();
+            con.Close();
+
+            GridView2.Columns[0].Visible = false;
         }
     }
 }

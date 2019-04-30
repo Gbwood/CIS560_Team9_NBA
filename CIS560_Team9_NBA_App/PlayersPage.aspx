@@ -101,14 +101,17 @@
         <!-- Page Content -->
         <div class="container py-3 my-5" id="input">
 
-                    <div class="form-group row">
-                        <label for="lname-input" class="col-3 col-form-label font-weight-bold">Search Player</label>
-                        <div>
-                              <asp:TextBox ID="uxSearchPlayerTB" runat="server" Width="346px"></asp:TextBox>
-                     
+                     <div class="form-group row">
+                        <asp:Label ID="Playerlbl" runat="server" class="col-3 col-form-label font-weight-bold" Font-Bold="True" Font-Size="X-Large" Text="Player Name"></asp:Label>
+                    
+                        <div class="col-9">
+                            <asp:TextBox ID="uxSearchPlayerTB" runat="server"  CssClass="form-control"></asp:TextBox>
                         </div>
-                         <asp:Button ID="uxSearchPlayerButton" runat="server" CssClass="btn btn-primary btn-lg btn-block" OnClick="searchSubmit_Click" Text="Search Player"/>
-                        </div>
+           
+                    </div>
+             <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary btn-lg btn-block" Text="Search" OnClick="btnSearch_Click"   />
+
+                </div>
             <asp:GridView id="GridView2" runat="server" class="Table-hover table-dark container my-5 ">
                 <Columns>
                     <asp:CommandField ShowEditButton="True" />
